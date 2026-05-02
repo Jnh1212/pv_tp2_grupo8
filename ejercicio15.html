@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 15 - retornarMes</title>
+</head>
+<body>
+  <script>
+    // Función retornarMes
+    const retornarMes = (num) => {
+      const meses = [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+      ];
+      if (num >= 1 && num <= 12) {
+        return meses[num - 1];
+      } else {
+        return "El número no corresponde a un mes";
+      }
+    };
+
+    // Pedir número al usuario
+    let numIngresado = parseInt(prompt("Ingrese un número del 1 al 12:"));
+
+    // Obtener resultado
+    let resultado = retornarMes(numIngresado);
+
+    // Mostrar en pantalla (template string)
+    document.write(`<h2>Resultado:</h2>`);
+    document.write(`<p>El número (${numIngresado}) corresponde al mes de: ${resultado}</p>`);
+  </script>
+</body>
+</html>

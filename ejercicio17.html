@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 17 - contarLetraA</title>
+</head>
+<body>
+  <script>
+    // Función contarLetraA
+    const contarLetraA = (texto) => {
+      let cont = 0;
+      for (let i = 0; i < texto.length; i++) {
+        if (texto[i].toLowerCase() === "a") {
+          cont++;
+        }
+      }
+      return cont;
+    };
+
+    // Pedir string al usuario
+    let cad = prompt("Ingrese un texto:");
+    let cantidadA = contarLetraA(cad);
+
+    // Mostrar resultado en pantalla con template strings
+    document.write(`<h2>Resultado:</h2>`);
+    document.write(`<p>El texto: "${cad}"</p>`);
+    document.write(`<p>La letra "a" aparece ${cantidadA} veces.</p>`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 18 - calcularMayor</title>
+</head>
+<body>
+  <script>
+    // Función calcularMayor
+    const calcularMayor = (num1, num2) => {
+      if (num1 > num2) {
+        document.write(`<p>El número ${num1} es mayor que ${num2}.</p>`);
+      } else if (num2 > num1) {
+        document.write(`<p>El número ${num2} es mayor que ${num1}.</p>`);
+      } else {
+        document.write(`<p>Los números ingresados (${num1} y ${num2}) son iguales.</p>`);
+      }
+    };
+
+    // Pedir números al usuario
+    let numero1 = parseInt(prompt("Ingrese el primer número:"));
+    let numero2 = parseInt(prompt("Ingrese el segundo número:"));
+
+    // Mostrar resultado (template strings)
+    document.write(`<h2>Resultado:</h2>`);
+    calcularMayor(numero1, numero2);
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 16 - sumarRango</title>
+</head>
+<body>
+  <script>
+    // Función sumarRango
+    const sumarRango = (inicio, fin) => {
+      let suma = 0;
+      let i;
+      for (i = inicio; i <= fin; i++) {
+        suma += i;
+      }
+      return suma;
+    };
+
+    // Pedir números al usuario
+    let numInicial = parseInt(prompt("Ingrese el número inicial:"));
+    let numFinal = parseInt(prompt("Ingrese el número final:"));
+
+    // Validar que el inicial sea menor o igual al final
+    if (numInicial <= numFinal) {
+      let resultado = sumarRango(numInicial, numFinal);
+      // Mostrar en pantalla (template strings)
+      document.write(`<h2>Resultado:</h2>`);
+      document.write(`<p>La suma de los números que estan en el rango (${numInicial} y ${numFinal}) es: ${resultado}</p>`);
+    } else {
+      document.write(`<h2>¡¡Error!!</h2>`);
+      document.write(`<p>El número inicial (${numInicial}) debe ser menor o igual que el número final (${numFinal}).</p>`);
+    }
+  </script>
+</body>
+</html>
