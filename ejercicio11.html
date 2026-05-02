@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <script>
+        const km = Number(prompt("Kilómetros:"));
+        const litros = Number(prompt("Litros:"));
+
+        const calcularConsumo = (l, k) => l / k;
+
+        const consumoFinal = calcularConsumo(litros, km);
+
+        document.write(`<h3>Consumo: ${consumoFinal.toFixed(2)} L/km</h3>`);
+    </script>
+</body>
+
+</html>
