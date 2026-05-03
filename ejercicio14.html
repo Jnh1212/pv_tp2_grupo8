@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <script>
+        let cantidad = Number(prompt("Ingrese la cantidad de números a ingresar:"));
+let numeros = [];
+
+for (let i = 0; i < cantidad; i++) {
+    let num = Number(prompt(`Ingresá el número ${i + 1}`));
+    numeros.push(num);
+}
+function duplicar(arr) {
+    let nuevo = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        nuevo.push(arr[i] * 2);
+    }
+
+    return nuevo;
+}
+let resultado = duplicar(numeros);
+document.write(`Array original: ${numeros} <br>`);
+document.write(`Array duplicado: ${resultado}`);
+
+    </script>
+</body>
+</html>
