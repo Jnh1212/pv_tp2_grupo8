@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+input {
+    padding: 12px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#visorTexto {
+    margin-top: 20px;
+    padding: 20px;
+    width: 300px;
+    min-height: 40px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #fff;
+    word-wrap: break-word;
+    transition: background-color 0.3s ease;
+}
