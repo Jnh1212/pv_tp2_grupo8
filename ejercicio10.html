@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 10</title>
+  </head>
+  <body>
+    <script>
+      let cantidad = parseInt(prompt("¿Cuantos numeros deseas ingresar?"));
+
+      let numeros = [];
+      let suma = 0;
+
+      if (isNaN(cantidad) || cantidad <= 0) {
+        document.write("Cantidad invalida");
+      } else {
+        for (let i = 0; i < cantidad; i++) {
+          let num = parseInt(prompt(`Ingresa el numero ${i + 1}:`));
+
+          if (isNaN(num)) {
+            alert("Numero invalido, intenta de nuevo");
+            i--;
+          } else {
+            numeros.push(num);
+            suma = suma + num;
+          }
+        }
+
+        let promedio = suma / numeros.length;
+
+        document.write(`
+      <h2>Resultados</h2>
+      <p>Números ingresados: ${numeros.join(", ")}</p>
+      <p>Promedio: ${promedio}</p>
+    `);
+      }
+    </script>
+  </body>
+</html>

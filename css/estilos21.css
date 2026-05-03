@@ -1,0 +1,22 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+  background-color: aquamarine;
+}
+
+h2 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#paises,
+#capitales {
+  width: 300px;
+  height: 25px;
+}
+
+#paises:hover,
+#capitales:hover {
+  cursor: pointer;
+}
